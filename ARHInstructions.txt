@@ -1,0 +1,9 @@
+_______________________________________________=================____________________________________________________
+Disclaimer!    This is only a car viewing website. Available cars are listed below in the site. Please contact us using
+		 given phone no or Email below to book your car! Regards Ali Raza Haider
+
+_______________________________________________==================___________________________________________________
+
+Please paste the ARH_Car_Service_Data folder in the htdocs file in xammp after creating the database the entire project will run.
+
+====================================================================================================================

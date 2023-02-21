@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARH Consortium</title>
+
+
+    <style>
+        * {
+          
+            outline: none;
+            border: none;
+            text-decoration: none;
+            text-transform: capitalize;
+            transition: .2s linear;
+        }
+
+        body {
+            /* width:6px; */
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 0px;
+            padding: 0px;
+            background: url("header-automotive copy.jpg");
+            color: rgb(246, 247, 247);
+            font-size: 19px;
+
+        }
+
+        .left {
+            /* border: 2px solid blue; */
+            /* color:aliceblue */
+            display: inline-block;
+            position: absolute;
+            left: 60px;
+            top: 22px;
+            /* margin: 0px 0px; */
+        }
+
+        .left img {
+            top: 0px;
+            width: 100px;
+            border-radius: 14px;
+            margin: 1px 1px;
+            /* filter:invert(100%)  */
+            cursor: pointer;
+
+        }
+
+        .left div {
+            text-align: center;
+
+
+        }
+
+
+        .mid {
+            /* border: 2px solid rgb(59, 59, 212); */
+            /* color:aliceblue */
+            display: inline-block;
+            display: block;
+            width: 45%;
+            margin: 10px auto;
+            /* font-size: 24px; */
+            /* color:red; */
+            /* top: 26px; */
+
+        }
+
+        .right {
+            position: absolute;
+            /* border: 2px solid rgb(255, 0, 128); */
+            /* color:aliceblue */
+            /* display:inline-block; */
+            margin: 10px auto;
+            right: 34px;
+            top: 22px;
+            display: inline-block;
+            text-decoration: solid;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            /* color: white; */
+            font-size: 25px;
+        }
+
+        .navbar li a {
+            color: rgb(246, 244, 244);
+            text-decoration: none;
+            padding: 30px 20px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a .active {
+            color: orange;
+            /* text-decoration: underline; */
+            /* text-decoration: wavy; */
+        }
+
+        .btn {
+            margin: 0px 9px;
+            color: white;
+            background-color: black;
+            border-radius: 5px;
+            padding: 5px 14px;
+            border: 2px solid grey;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            /* color: red; */
+            background-color: orange;
+        }
+
+        .container {
+            /* position:fixed; */
+            border: 2px solid white;
+            margin: 106px 80px;
+            padding: 75px;
+            width: 33%;
+            border-radius: 26px;
+
+        }
+
+        .formgroup input {
+            text-align: center;
+            display: block;
+            border-radius: 5px;
+            width: 320px;
+            padding: 5px;
+            border: 2px solid white;
+            margin: 5px auto;
+
+        }
+
+        .container h1 {
+            text-align: center;
+
+        }
+
+        .container button {
+            display: block;
+            width: 95%;
+            margin: 26px auto;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        /* Responsive layout - makes a one column layout instead of a two-column layout */
+        /* @media (max-width: 800px) {
+            .flex-container {
+                flex-direction: column;
+            }
+        } */
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+
+            <img src="ARH.png" alt="">
+            <!-- comments are written by using sterik and forward slash -->
+            <!-- like this -->
+            </ul>
+        </div>
+
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class=active>Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">About us</a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <button class="btn">
+                Call Us
+            </button>
+            <button class="btn">
+                Email Us
+            </button>
+        </div>
+
+
+    </header>
+    <div class="container">
+        <h1>Register Now!</h1>
+        <form  action="signupdata.php" method="POST">
+            <div class="formgroup">
+                <input type="text" name="name" id="" placeholder="Enter Your Name">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="email" id="eml" placeholder="Enter Your Email">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="password" id="" placeholder="Enter Your Password">
+            </div>
+            <button  type="submit" value="Sign Up" class="btn" name="send">Submit</button>
+        </form>
+    </div>
+
+    <!-- <h1>The progress element</h1>
+    <label for="file">Downloading progress:</label>
+    <progress id="file" value="32" max="100"> 32% </progress>
+    <br>
+    <hr>
+    <br>
+    <video width="300" height="200" controls autoplay>
+        <source src="/html5/foo.ogg" type="video/ogg" />
+        <source src="/html5/foo.mp4" type="video/mp4" />
+        Your browser does not support the video element.
+    </video> -->
+
+    <!-- <audio controls autoplay>
+        <source src="/html5/audio.ogg" type="audio/ogg" />
+        <source src="/html5/audio.wav" type="audio/wav" />
+        Your browser does not support the audio element.
+    </audio>
+
+    <figure>
+        <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/
+                  download3.png" alt="GFG" style="width:50%">
+        <figcaption>Fig.1 - ARH.</figcaption>
+    </figure> -->
+
+
+    <!-- <nav>
+        <a href="/html/">HTML</a>
+        <a href="/css/">CSS</a>
+        <a href="/js/">JavaScript</a>
+        <a href="/jquery/">jQuery</a>
+    </nav> -->
+
+
+    <!-- <br>
+    <br>
+    <hr> -->
+    <!-- <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div> -->
+    <!-- <hr> -->
+    <!-- <div class="flex-container">
+    <div style="flex-grow: 1">1</div>
+    <div style="flex-grow: 1">2</div>
+    <div style="flex-grow: 8">3</div>
+  </div> -->
+    <!-- <br> -->
+
+
+    <!-- <script>
+        let xhr = new XMLHttpRequest();
+        console.log(xhr);
+
+        xhr.open('GET', 'upload.py', true);
+
+        xhr.onload = function () {
+            if (this.status == 200) {
+                console.log(this.responseText);
+            }
+        };
+
+        xhr.send();
+    </script> -->
+
+</body>
+
+</html>
